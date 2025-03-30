@@ -13,11 +13,38 @@
             background-color: #776483;
         }
 
-        header {
+        #header {
             background: #f8b38e;
             color: #04021b;
             text-align: center;
             padding: 1rem 0;
+        }
+
+        #pesquisa {
+            background-color: #5D4E6D;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -33,16 +60,47 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        #img {
+            width: 100%;
+        }
+        
+        footer {
+            background-color: #5D4E6D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Behind the musical: "Little Wolf"</h1>
+        <div id="header">
+            <h1>Behind the musical: "Little Wolf"</h1>
+        </div>
+
+        <div id="pesquisa">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#epic">Epic</a></li>
+                    <li><a href="#littlewolf">Little Wolf</a></li>
+                    <li><a href="#atores">Atores e Personagens</a></li>
+                    <li><a href="#producao">Produção</a></li>
+                    <li><a href="#bastidores">Bastidores</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
         <div class="post">
+            <img src="capa album wisdom.jfif" id="img">
+        </div>
+
+        <div class="post" id="sobre">
             <h2>Sobre</h2>
             <p>Nesse blog, irei apresentar um musical que alguns estudantes 
                 do cotuca ensenaram nessa terça-feira (1º de abril) no Salão Nobre.</p>
@@ -54,65 +112,121 @@
                 "Little Wolf" do musical "Epic".</p>
         </div>
 
-        <div class="post">
-            <h2>Little Wolf</h2>
+        <div class="post" id="epic">
+            <h2>Epic</h2>
+            <img src="capa album epic.webp" id="img">
             <p>
-                Epic: The Musical é uma adaptação cantada da Odisseia de Homero, 
-                criada por Jorge Rivera-Herrans. O musical narra a jornada de 
+                Epic é uma adaptação musical da Odisseia de Homero, 
+                criada por Jorge Rivera-Herrans. A obra narra a jornada de 
                 Odisseu de Troia a Ítaca, enfrentando deuses e monstros.
                 
                 O projeto começou em 2019 como tese de Rivera-Herrans e 
                 ganhou popularidade em 2021 no TikTok. A primeira parte, 
                 The Troy Saga, saiu em 2022, seguida por The Cyclops Saga (2023) 
-                e The Ocean Saga (2023). Após um impasse legal, 
-                The Wisdom Saga estreou em agosto de 2024.
+                e The Ocean Saga (2023). Somente em agosto de 2024, estreou 
+                The Wisdom Saga, que contém Little Wolf.
 
-                Nesta saga, Telêmaco, agora com 20 anos, 
+                Nesta saga, Telêmaco, com 20 anos, 
                 luta para proteger sua mãe dos pretendentes. 
                 Atena intervém e, ao buscar respostas sobre Odisseu, 
                 descobre que ele está preso com Calipso. Para libertá-lo, 
                 Atena desafia Zeus e precisa convencer cinco deuses olímpicos, 
-                culminando no confronto entre ela e Zeus em "God Games".
+                culminando no confronto entre ela e Zeus.
             </p>
+        </div>
 
+        <div class="post" id="littlewolf">
+            <h2>Little Wolf</h2>
+            <p>A referência utilizada foi esta animação: <a href="https://youtu.be/BPiJF7rceiA?si=QXSRJbc-BsaISc1q"><img src="capa video youtube.jfif" id="img">Clique e será redirecionado.</a></p>
             <p>
-                Ato 2 - The Wisdom Saga (estreou em 30 de agosto de 2024): 
-                "Little Wolf" - Antínoo, Atena, Telêmaco e Pretendentes.
+                Antínoo, Atena, Telêmaco e Pretendentes.
             
-                Em "Little Wolf", Telêmaco enfrenta o pretendente Antínoo para 
-                defender a honra de sua mãe, mas acaba sendo espancado. Atena, 
-                disfarçada, intervém e o salva. Após a luta, Telêmaco pergunta 
+                Em "Little Wolf", de "The Wisdom Saga", Telêmaco enfrenta o pretendente 
+                Antínoo para defender a honra de sua mãe, mas acaba sendo espancado. 
+                Atena, disfarçada, intervém e o salva. Após a luta, Telêmaco pergunta 
                 por que ela o ajudou, e Atena reflete sobre seu passado com Odisseu, 
-                demonstrando arrependimento. Telêmaco, sem saber que ela se refere 
-                ao seu pai, a incentiva a buscar sua antiga amizade e consertar 
-                seu relacionamento.
+                demonstrando arrependimento.
             </p>
         </div>
 
-        <div class="post">
-            <h2>Atores e Atrizes</h2>
-            <p>Clara Alves dos Santos</p>
-            <p>Eduardo Artigiani Lima Tribst</p>
-            <p>Júlio Pacheco Stein</p>
-            <p>Lorrayne Argenton dos Santos</p>
+        <div class="post" id="atores">
+            <h2>Atores e Personagens</h2>
+
+            <p>Atena (Clara Alves dos Santos): Deusa da sabedoria e 
+                estratégia, guia Telêmaco e ajuda Odisseu a voltar 
+                para casa. Em Little Wolf, ela salva Telêmaco e 
+                reflete sobre seu passado com Odisseu.</p>
+
+            <p>Antínoo (Eduardo Artigiani Lima Tribst): Um dos principais 
+                pretendentes de Penélope. Representa a arrogância e a 
+                ameaça que Telêmaco enfrenta ao defender sua mãe.</p>
+
+            <p>Telêmaco (Júlio Pacheco Stein): Filho de Odisseu. Ele 
+                anseia por ser um herói como o pai e enfrenta Antínoo 
+                para defender a honra de Penélope.</p>
+
+            <p>Platéia da luta (Lorrayne Argenton dos Santos): Representa 
+                o público dentro da peça, reagindo às cenas de confronto 
+                e dando mais dinamismo ao musical.</p>
         </div>
 
-        <div class="post">
+        <div class="post" id="producao">
             <h2>Produção</h2>
-            <p>
-                Os professores nos deram algumas semanas de ensaio durante as aulas.
 
+            <h4>Escolha da música</h4>
+            <p>
+                O grupo teve liberdade para decidir qual canção interpretar e, 
+                depois de algumas sugestões, "Little Wolf", de Epic: The Musical, 
+                foi a escolhida. A decisão veio tanto pela força da melodia quanto 
+                pelo significado da letra, que se encaixava bem na proposta do 
+                musical.
+            </p>
+
+            <h4>Ensaios e desafios</h4>
+            <p>
+                Os professores reservaram algumas semanas de ensaio durante as 
+                aulas, permitindo que o grupo praticasse a interpretação e a 
+                sincronia com a música. No início, houve desafios com a 
+                memorização da letra e a divisão dos trechos entre os integrantes. 
+                Além disso, ajustar o tempo da música e a movimentação no palco 
+                exigiu bastante esforço. No entanto, com cada ensaio, o grupo 
+                foi ganhando confiança e melhorando a performance.
+            </p>
+
+            <h4>Figurino</h4>
+            <p>
+                O figurino foi pensado para refletir o clima épico da apresentação. 
+                Algumas peças foram improvisadas com roupas que os alunos já tinham, 
+                enquanto outras foram adaptadas para dar um toque mais teatral. 
+                A ideia era criar uma estética que remetesse à mitologia grega e 
+                ao universo de Epic: The Musical.
             </p>
         </div>
 
-        <div class="post">
+        <div class="post" id="bastidores">
+            <!-- Cena mais engraçada/entrevista/personagens/como foi -->
             <h2>Bastidores</h2>
             <p>
-                Cena mais engraçada
+                Entre os ensaios e a apresentação, várias situações 
+                divertidas aconteceram. Um dos momentos mais engraçados 
+                foi quando um dos integrantes esqueceu completamente a 
+                letra no meio da música e improvisou com um gesto dramático, 
+                fazendo todos rirem. 
+            </p>
+            <p>
+                A interpretação dos personagens foi um desafio à parte. 
+                Como a música envolve Telêmaco, Antínoo, Atena e os pretendentes, 
+                cada um precisou estudar o contexto da história para transmitir 
+                bem as emoções e a energia da cena.
             </p>
         </div>
 
     </div>
+
+
+    <footer>
+        <p>Copyright 2023 - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 
